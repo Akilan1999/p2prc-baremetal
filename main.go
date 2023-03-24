@@ -22,7 +22,7 @@ func main() {
 
 func EscapeNATSSH() (SSHport string, err error) {
     // Get free port from P2PRC server node
-    serverPort, err := frp.GetFRPServerPort("http://64.227.168.102:8088")
+    serverPort, err := frp.GetFRPServerPort("http://164.90.177.167:8089")
 
     if err != nil {
         return
@@ -31,7 +31,7 @@ func EscapeNATSSH() (SSHport string, err error) {
     time.Sleep(1 * time.Second)
 
     //port for the barrierKVM server
-    SSHport, err = frp.StartFRPClientForServer("64.227.168.102", serverPort, "22")
+    SSHport, err = frp.StartFRPClientForServer("164.90.177.167.102", serverPort, "22")
     if err != nil {
         return
     }
