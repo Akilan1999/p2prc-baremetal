@@ -31,7 +31,7 @@ func EscapeNATSSH() (SSHport string, err error) {
     time.Sleep(5 * time.Second)
 
     //port for the barrierKVM server
-    SSHport, err = frp.StartFRPClientForServer("164.90.177.167.102", serverPort, "22")
+    SSHport, err = frp.StartFRPClientForServer("164.90.177.167", serverPort, "22")
     if err != nil {
         return
     }
