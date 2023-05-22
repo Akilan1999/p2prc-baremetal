@@ -2,6 +2,8 @@ module github.com/Akilan1999/p2prc-baremetal
 
 go 1.19
 
+replace github.com/Akilan1999/p2p-rendering-computation => /home/akilan/Documents/p2p-rendering-computation
+
 require (
 	github.com/Akilan1999/p2p-rendering-computation v1.1.1-0.20230322070341-88dddd023022 // indirect
 	github.com/Azure/go-ntlmssp v0.0.0-20200615164410-66371956d46c // indirect
